@@ -38,57 +38,48 @@ QuantumID is a production-ready authentication system that combines **NIST-appro
 
 **The Solution:** QuantumID implements **Kyber512** (NIST-approved post-quantum cryptography) and **Quantum Random Number Generation** to create a future-proof authentication system.
 
-| Metric | Value |
-|--------|-------|
-| PQC Algorithm | Kyber512 (NIST Finalist) |
-| Quantum Entropy | True Random (Hadamard Gates) |
-| 2FA Method | Quantum OTP via SMS/Email |
-| Security Level | Post-Quantum |
-| Response Time | < 1 second |
+<div align="center">
 
----
+<img src="https://img.shields.io/badge/⚛️-QuantumID-6C3FCF?style=for-the-badge&labelColor=0D0D0D" alt="QuantumID" height="60"/>
 
-## ✨ Features
+# QuantumID
 
-### 🔐 Core Security
-| Feature | Description |
-|---------|-------------|
-| **Kyber512 PQC** | NIST-approved lattice-based cryptography |
-| **Quantum RNG** | True random numbers via Qiskit Hadamard circuits |
-| **SHA3-256 Hashing** | Quantum-safe password storage |
-| **2FA with Quantum OTP** | One-time passwords from quantum entropy |
+### Post-Quantum Secure Digital Identity System
 
-### 📊 User Features
-| Feature | Description |
-|---------|-------------|
-| **User Registration** | Secure account creation with PQC keypairs |
-| **2FA Login Flow** | Password + Quantum OTP verification |
-| **Dashboard** | Security metrics and session info |
-| **Profile Management** | Update email, phone, and preferences |
+<p>
+    <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white"/></a>
+    <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-0.104-009688?style=flat-square&logo=fastapi&logoColor=white"/></a>
+    <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-14.0-000000?style=flat-square&logo=next.js&logoColor=white"/></a>
+    <a href="https://qiskit.org"><img src="https://img.shields.io/badge/Qiskit-0.45-6929C4?style=flat-square&logo=ibm&logoColor=white"/></a>
+    <a href="https://pq-crystals.org/kyber/"><img src="https://img.shields.io/badge/PQC-Kyber512-FF6B35?style=flat-square"/></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square"/></a>
+</p>
 
-### 🛡️ Admin Features
-| Feature | Description |
-|---------|-------------|
-| **Admin Panel** | View all registered users |
-| **Login History** | Track all authentication attempts |
-| **Rate Limiting** | Brute force protection (5-10 req/min) |
-| **User Management** | Oversee system activity |
+<p>
+    <strong>Quantum-safe authentication for the post‑RSA era.</strong><br/>
+    Prototype built with Kyber512 PQC + Qiskit RNG · Demo SMS & WebSocket integrations
+</p>
 
-### 📈 Advanced Features
-| Feature | Description |
-|---------|-------------|
-| **Analytics Dashboard** | Login trends, success rates, anomaly detection |
-| **Export Reports** | Download CSV reports of login history |
-| **2FA Backup Codes** | One-time recovery codes (8 per user) |
-| **Device Management** | View and revoke active sessions |
-| **Real-time WebSocket Alerts** | Live notifications on dashboard |
-| **SMS Alerts** | OTP delivery via TextBee |
-| **Email Alerts** | OTP delivery via Brevo/SendGrid |
+<a href="#getting-started">Get Started</a> ·
+<a href="#api-reference-summary">API Docs</a> ·
+<a href="#architecture">Architecture</a> ·
+<a href="#deployment">Deploy</a>
 
----
+</div>
 
-## Tech stack
+## Table of contents
 
+- [Highlights](#highlights)
+- [Tech stack](#tech-stack)
+- [Architecture](#architecture)
+- [Getting started](#getting-started)
+- [Environment variables](#environment-variables)
+- [Usage & flows](#usage--flows)
+- [API reference (summary)](#api-reference-summary)
+- [Frontend notes](#frontend-notes)
+- [Security & production notes](#security--production-notes)
+- [Contributing](#contributing)
+- [License](#license)
 ### Backend
 | Technology | Purpose |
 |------------|---------|
