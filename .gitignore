@@ -1,0 +1,46 @@
+# Environment variables (contains API keys!)
+.env
+.env.local
+.env.production
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Database (contains user data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Node modules
+node_modules/
+.next/
+out/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+server.log
+nohup.out
+
+# Secrets
+*.pem
+*.key
+*.crt
+
+# Backup files
+*.bak
+*.backup
+*~
